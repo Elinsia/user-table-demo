@@ -25,28 +25,27 @@ const UserTable = () => {
 
 
 	const [editState, setEditState] = useState({
-			userId: null,
-			isEdit: false,
+		userId: null,
+		isEdit: false,
 	});
 
 	const handleEditUser = (id) => {
-			if(editState.isEdit) {
-				const user = getValues().users;
-				dispatch(updateUser({
-					id: editState.userId,
-					user: user[editState.userId]
-				}));
-				setEditState({
-						userId: null,
-						isEdit: false,
-				});
+		if(editState.isEdit) {
+			const user = getValues().users;
+			dispatch(updateUser({
+				id: editState.userId,
+				user: user[editState.userId]
+			}));
+			setEditState({
+					userId: null,
+					isEdit: false,
+			});
 		} else {
-				setEditState({
-						userId: id,
-						isEdit: true,
-				});
-			}
-			
+			setEditState({
+				userId: id,
+				isEdit: true,
+			});
+		}
 	};
 
 	const handleRemoveUser = (id) => {

@@ -16,7 +16,7 @@ export const userSlice = createSlice({
 			state.users = payload;
 			state.isLoading = false;
 		},
-		[loadUsers.rejected]: (state, { payload }) => {
+		[loadUsers.rejected]: (state) => {
 			state.isLoading = false;
 		},
 		[addUser.fulfilled]: (state, { payload }) => {

@@ -13,7 +13,7 @@ export const validation = {
         required: 'Field is required',
         pattern: {
             value: /^[a-zA-Z ]*$/,
-            message: 'No numbers'
+            message: 'No numbers and cyrillic'
         }
     },
     birthday: {
