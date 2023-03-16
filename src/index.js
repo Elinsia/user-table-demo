@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { GlobalStyle } from './components/styles/custom/GlobalStyle'
+import { GlobalStyle } from './components/styles/custom/GlobalStyle';
 import { store } from './app/store';
 import App from './App';
 
@@ -14,5 +14,5 @@ root.render(
       <GlobalStyle />
       <App />
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

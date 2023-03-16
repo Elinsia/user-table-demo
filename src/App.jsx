@@ -2,9 +2,7 @@ import React from 'react';
 import { UserContainer } from './components/UserContainer';
 
 function App() {
-  return (
-    <UserContainer />
-  );
+  return <UserContainer />;
 }
 
 export default App;
